@@ -1,0 +1,17 @@
+1. Creation
+npx create-nuxt-app hellonuxt
+    - hellonuxt
+    - An introduction to nuxt
+    - Gilbert Ssenyonjo
+    - Npm
+    - Bootstrap Vue
+    - Express
+    - Axios, Progresive Web App (PWA) Support, Dotenv
+    - ESLint
+    - Jest
+    - Universal (SSR)
+    - jsconfig.json
+
+2. Deployment
+    - heroku create pfmscontacts
+    - heroku config:set NPM_CONFIG_PRODUCTION=false
