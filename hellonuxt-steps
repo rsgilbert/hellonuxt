@@ -15,3 +15,9 @@ npx create-nuxt-app hellonuxt
 2. Deployment
     - heroku create pfmscontacts
     - heroku config:set NPM_CONFIG_PRODUCTION=false
+    - heroku config:set HOST=0.0.0.0
+    - heroku config:set NODE_ENV=production
+    - "heroku-postbuild": "npm run build" (package.json)
+    - web: nuxt start (Procfile)
+
+    
