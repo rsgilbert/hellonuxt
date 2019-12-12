@@ -1,31 +1,31 @@
 1. Creation
-npx create-nuxt-app hellonuxt
-    - hellonuxt
-    - An introduction to nuxt
-    - Gilbert Ssenyonjo
-    - Npm
-    - Bootstrap Vue
-    - Express
-    - Axios, Progresive Web App (PWA) Support, Dotenv
-    - ESLint
-    - Jest
-    - Universal (SSR)
-    - jsconfig.json
+    - npx create-nuxt-app hellonuxt (/bin/bash)
+        - hellonuxt
+        - An introduction to nuxt
+        - Gilbert Ssenyonjo
+        - Npm
+        - Bootstrap Vue
+        - Express
+        - Axios, Progresive Web App (PWA) Support, Dotenv
+        - ESLint
+        - Jest
+        - Universal (SSR)
+        - jsconfig.json
 
 2. Deployment
-    - heroku create pfmscontacts
-    - heroku config:set NPM_CONFIG_PRODUCTION=false
-    - heroku config:set HOST=0.0.0.0
-    - heroku config:set NODE_ENV=production
+    - heroku create pfmscontacts (/bin/bash)
+    - heroku config:set NPM_CONFIG_PRODUCTION=false (/bin/bash)
+    - heroku config:set HOST=0.0.0.0 (/bin/bash)
+    - heroku config:set NODE_ENV=production (/bin/bash)
     - "heroku-postbuild": "npm run build" (package.json)
     - web: nuxt start (Procfile)
-    - git push heroku master
+    - git push heroku master (/bin/bash)
 
 3. NGINX
-    - heroku buildpacks:add heroku-community/nginx
-    - Add config dir
+    - heroku buildpacks:add heroku-community/nginx (/bin/bash)
+    - Add config dir and inside dir add nginx.corf.erb
     - web: bin/start-nginx nuxt start (Procfile)
-    - app.listen('/tmp/nginx.socket', () => fs.openSync('/tmp/app-initialized', 'w'))
-    - 
+    - app.listen('/tmp/nginx.socket', () => fs.openSync('/tmp/app-initialized', 'w')) (server/index.js)
+    - git push heroku master (/bin/bash)
 
     
