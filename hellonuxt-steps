@@ -19,5 +19,13 @@ npx create-nuxt-app hellonuxt
     - heroku config:set NODE_ENV=production
     - "heroku-postbuild": "npm run build" (package.json)
     - web: nuxt start (Procfile)
+    - git push heroku master
+
+3. NGINX
+    - heroku buildpacks:add heroku-community/nginx
+    - Add config dir
+    - web: bin/start-nginx nuxt start (Procfile)
+    - app.listen('/tmp/nginx.socket', () => fs.openSync('/tmp/app-initialized', 'w'))
+    - 
 
     

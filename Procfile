@@ -1,1 +1,1 @@
-web: nuxt start
+web: bin/start-nginx nuxt start
