@@ -7,7 +7,7 @@ events {
 	accept_mutex on;
 	worker_connections <%= ENV['NGINX_WORKER_CONNECTIONS'] || 1024 %>;
 }
-
+# From https://nuxtjs.org/faq/nginx-proxy/
 map $sent_http_content_type $expires {
     "text/html"                 epoch;
     "text/html; charset=utf-8"  epoch;
