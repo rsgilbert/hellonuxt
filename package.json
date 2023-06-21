@@ -14,7 +14,7 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
+    "nuxt": "^3.4.3",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
     "bootstrap-vue": "^2.0.0",
